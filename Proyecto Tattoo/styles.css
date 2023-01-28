@@ -1,0 +1,171 @@
+html {
+    min-height: 100%;
+    position: relative;
+  }
+
+body {
+    background-image: url(fondoTatuaje.jpg);
+    font-family: 'Gruppo', cursive;
+}
+
+.cuerpo {
+    margin: 0;
+    margin-bottom: 120px;
+}
+
+.titulo {
+    text-align: center;
+    margin: 50px 0 50px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 60px;
+    line-height: 150%;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.principal {
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 150%;
+}
+
+.contenedorSecciones {
+    width: 80%;
+    margin: 50px auto;
+    padding: 25px 0 25px;
+}
+
+.eleccion {
+    margin-bottom: 50px;
+}
+
+.opcionesAdicionales {
+    width: 90%;
+    margin: 10px auto 10px;
+}
+
+.inputs {
+    width: 95%;
+    margin: 0 auto;
+}
+
+input[type = radio] {
+    cursor:pointer;
+}
+ 
+.inputsTexto input {
+    width: 100%;
+    margin: 30px 0;
+    font-family: 'Gruppo', cursive;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 125%;
+    color: black;
+    font-weight: 800;
+}
+
+.inputsTexto {
+    width: 30%;
+    margin: 30px 0;
+    font-family: 'Gruppo', cursive;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 125%;
+    color: black;
+    font-weight: 800;
+}
+
+::placeholder {
+    font-family: 'Gruppo', cursive;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 125%;
+    color: black;
+    font-weight: 800;
+}
+
+button {
+    width: 200px;
+    font-family: 'Gruppo', cursive;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+    margin-right: 20px;
+    transition: 0.5s all;
+    cursor:pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+#muestraDeCotizacion {
+    font-size: 35px;
+}
+
+#muestraDeCotizacion button {
+    margin-top: 30px;
+}
+
+#botonTurnosDisponibles {
+    width: 300px;
+}
+
+.datoImportante {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+#turnosDisponibles {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tituloTurnos {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 60%;
+    margin: 20px auto 50px;
+}
+
+#muestraTurnoAgendado {
+    font-size: 35px;
+    text-align: justify;
+}
+
+#exito {
+    color: green;
+}
+
+#perdidaSenia {
+    color: red;
+}
+
+.creditos {
+    text-align: center;
+    font-size: 18px;
+    line-height: 150%;
+    padding: 20px 0 20px;
+}
+
+.linkedin {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+}
+
+

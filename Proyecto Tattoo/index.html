@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tattoo App</title>
+</head>
+
+<body>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
+    <div class="cuerpo">
+        <div class="titulo">
+            <h1><strong>Cotizá tu tattoo y agendá un turno</strong></h1>
+        </div>
+
+        <div class="principal" id="formularioCotizacion">
+            <div class="contenedorSecciones">
+                <div class="eleccion">
+                    <h2>Ingresá la forma de tu tattoo</h2>
+                    <div class="inputs">
+                        <div id="divInputLineal">
+                            <input type="radio" name="formaTattoo" value="lineal" onclick="seleccionForma()"> Lineal
+                        </div>
+                        <div id="divInputOtro">
+                            <input type="radio" name="formaTattoo" value="otro" onclick="seleccionForma()"> Otro
+                        </div>
+                    </div>
+                </div>
+
+                <div class="eleccion">
+                    <h2>¿En qué zona del cuerpo será tu tatuaje?</h2>
+                    <div class="inputs">
+                        <div id="divInputZona1">
+                            <input type="radio" name="zona" value="extremidad"> Brazo / pierna
+                        </div>
+                        <div id="divInputZona2">
+                            <input type="radio" name="zona" value="interno"> Pecho / espalda / cintura / cuello /
+                            pie / mano / cara
+                        </div>
+                    </div>
+                </div>
+
+                <div class="eleccion">
+                    <h2>¿Tu tatuaje llevaría color?</h2>
+                    <div class="inputs">
+                        <div id="divInputColorSi">
+                            <input type="radio" name="color" value="si" onclick="seleccionColor()"> Sí
+                        </div>
+                        <div id="divInputColorNo">
+                            <input type="radio" name="color" value="no" onclick="seleccionColor()"> No
+                        </div>
+                    </div>
+                </div>
+
+                <div class="eleccion">
+                    <h2>¿En qué nivel considerés que tendría relleno, detalles y sombreado?</h2>
+                    <div class="inputs">
+                        <div>
+                            <input type="radio" name="dificultad" value="bajo"> Nivel bajo (sin sombras o
+                            relleno)
+                        </div>
+                        <div>
+                            <input type="radio" name="dificultad" value="medio"> Nivel medio (sombreado, algunos
+                            detalles)
+                        </div>
+                        <div>
+                            <input type="radio" name="dificultad" value="alto"> Nivel alto (mucho sombreado,
+                            solidez)
+                        </div>
+                    </div>
+                </div>
+
+                <button id="cotizar">Mostrar cotización</button>
+
+            </div>
+
+
+        </div>
+
+        <div class="principal" style="display: none;" id="muestra">
+            <div class="contenedorSecciones">
+                <div id="muestraDeCotizacion">
+                </div>
+            </div>
+        </div>
+
+        <div class="principal" id="turnos" style="display: none;">
+            <div class="contenedorSecciones">
+                <div id="turnosDisponibles">
+                </div>
+
+                <div id="datosFinales">
+                </div>
+
+                <div id="noTurnos">
+                </div>
+
+                <div id="errorTurnos">
+                </div>
+            </div>
+        </div>
+
+        <div class="principal" id="agendaExitosa" style="display: none;">
+            <div class="contenedorSecciones">
+                <div id="muestraTurnoAgendado">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="principal" id="footer">
+        <div class="creditos">
+            <p>Desarrollado por Renzo Mercado
+                <a class="linkedin" href="https://www.linkedin.com/in/renzo-mercado-4a9720197/"><iconify-icon
+                        icon="logos:linkedin-icon"></iconify-icon></a>
+                <a href="https://github.com/renzom777"><iconify-icon icon="codicon:github-inverted"></iconify-icon></a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="cotizacion.js"></script>
+</body>
+
+</html>

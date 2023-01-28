@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns:th="http://www.thymeleaf.org">
+
+    <head th:replace="/fragments/head :: head"></head>
+
+    <body>
+
+        <div class="container m-5">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Turno</th>
+                        <th scope="col">Desde</th>
+                        <th scope="col">Hasta</th>
+                        <th scope="col">Pedido</th>
+                        <th scope="col">Pago</th>
+                        <th scope="col">Cliente</th>
+                        <th scope="col">Telefono</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="tatuaje:${tatuajes}">
+                        <td th:text="${tatuaje.precio}"></td>
+                        <td th:text="${tatuaje.fechaTurno}"></td>
+                        <td th:text="${tatuaje.horarioInicial}"></td>
+                        <td th:text="${tatuaje.horarioFinal}"></td>
+                        <td th:text="${tatuaje.fechaPedido}"></td>
+                        <td th:text="${tatuaje.pagoSenia}"></td>
+                        <td th:text="${tatuaje.nombreCliente}"></td>
+                        <td th:text="${tatuaje.telefonoCliente}"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <a href="/admin/dashboard"><button type="button">Volver</button></a>
+        </div>
+
+    </body>
+</html>
